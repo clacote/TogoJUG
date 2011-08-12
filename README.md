@@ -10,5 +10,5 @@ Utilisation
 -----------
 
 * Installer Maven et GIT sur un ordinateur avec une connexion Internet active.
-* Cloner le repository : git clone xxx/*.git
+* Cloner le repository : git clone git@github.com:Fluor/TogoJUG.git
 * Compilation Maven : mvn clean install
