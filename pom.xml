@@ -15,8 +15,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- Dépendances : les bibliothèques et modules qu'on utilise -->
     <dependencies>
-        <!-- Test dependencies -->
+        <!-- Dépendances pour les tests -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -31,6 +32,8 @@
         </dependency>
     </dependencies>
 
+
+    <!-- Configuration de divers plugins d'analyse de code -->
     <build>
         <plugins>
             <plugin>

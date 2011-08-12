@@ -4,8 +4,6 @@ import net.java.togojug.domain.User;
 import net.java.togojug.repository.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
-import sun.security.util.Password;
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 
@@ -28,7 +26,7 @@ public class UserServiceImplTest {
     }
 
 
-    @Test
+    @Test(expected=UnknownUserException.class)
     public void testLoginUnknownUser() throws LoginException {
         
         final String username = "Toto";
@@ -37,12 +35,12 @@ public class UserServiceImplTest {
         try {
             userServiceImpl.login(username, "password");
         } catch (UnknownUserException ex) {
-            return;
+            throw ex;
         }
         fail("Expecting LoginException");
     }
 
-    @Test
+    @Test(expected=InvalidCredentialsException.class)
     public void testLoginInvalidCredential() throws LoginException {
         
         final String username = "Toto";
@@ -54,7 +52,7 @@ public class UserServiceImplTest {
         try {
             userServiceImpl.login(username, "zefzef");
         } catch (InvalidCredentialsException ex) {
-            return;
+            throw ex;
         }
         fail("Expecting InvalidCredentialsException");
     }
