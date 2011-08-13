@@ -9,21 +9,20 @@ import net.java.togojug.domain.User;
 public interface UserService {
     
     /**
-     * Log-in method.
-     * If given credentials are valid (username/password match), returns logged in user.
-     * If unknown user, throws LoginException.
-     * @param username Username
-     * @param password Password
-     * @return User logged in.
-     * @throws InvalidCredentialException if invalid credentials
-     * @throws UnknownUser if user does not exists
+     * Méthode de login.
+     * Si le mot de passe donné est valide, retourne l'utilisateur loggé. Sinon, lève l'exception {@link InvalidCredentialsException}
+     * Si l'utilisateur est inconnu, lève l'exception {@link UnknownUserException}
+     * @param username Nom d'utilisateur
+     * @param password Mot de passe
+     * @return Utilisateur loggé.
+     * @throws InvalidCredentialException si le mot de passe est erroné
+     * @throws UnknownUser si l'utilisateur est inconnu
      */
     User login( String username, String password) throws LoginException;
 
-
     /**
-     * 
-     * @param user 
+     * Enregistre un nouvel utilisateur
+     * @param user Utilisateur à enregistrer
      */
     void register( User user);
 }
