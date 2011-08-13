@@ -3,6 +3,7 @@ Démo pour le TogoJUG
 
 Ce projet est une démonstration pour le TogoJUG.
 Il met en oeuvre :
+
 * Maven.
 * JUnit et Mockito pour les tests unitaires.
 * Quelques plugins d'analyse de code pour la génération de rapports
