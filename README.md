@@ -8,6 +8,9 @@ Il met en oeuvre :
 * [JUnit](http://junit.sourceforge.net/) et [Mockito](http://mockito.org) pour les tests unitaires avec des mock-objects.
 * Quelques plugins d'analyse de code pour la génération de rapports via Maven.
 
+Il se contente de montrer le codage de tests unitaires (cf. UserServiceImplTest.java) avec des objets bouchonnés.
+La classe testée est UserServiceImpl, un exemple de service fonctionnelle utilisant une dépendance (UserRepository) lui fournissant l'accès à la base de données. Aucune implémentation n'existe pour cette interface!
+
 Utilisation
 -----------
 
