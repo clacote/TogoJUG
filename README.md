@@ -9,7 +9,8 @@ Il met en oeuvre :
 * Quelques plugins d'analyse de code pour la génération de rapports via Maven.
 
 Il se contente de montrer le codage de tests unitaires (cf. UserServiceImplTest.java) avec des objets bouchonnés.
-La classe testée est UserServiceImpl, un exemple de service fonctionnelle utilisant une dépendance (UserRepository) lui fournissant l'accès à la base de données. Aucune implémentation n'existe pour cette interface!
+La classe testée est UserServiceImpl, un exemple de service fonctionnel utilisant une dépendance (UserRepository) lui fournissant l'accès à la base de données.
+Aucune implémentation n'existe pour cette interface! On la "bouchonnera" donc avec un mock-object, créé facilement avec Mockito.
 
 Utilisation
 -----------
