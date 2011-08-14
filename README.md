@@ -20,3 +20,8 @@ Utilisation
 * Compilation Maven : _mvn clean install_ (les tests sont automatiquement exécutés)
 * Génération des rapports d'analyse : _mvn clean site_
 * Consultation des rapports d'analyse : afficher _TogoJUG\target\site\index.html_
+
+Questions, support, félicitations, insultes
+-----------
+
+Cyril Lacôte, Twitter [@clacote](http://www.twitter.com/clacote)
