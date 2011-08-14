@@ -19,8 +19,11 @@ Utilisation
 * Installer [GIT](http://git-scm.com/download)
 * Cloner le repository : _git clone git@github.com:Fluor/TogoJUG.git_
 * Compilation Maven : _mvn clean install_ (les tests sont automatiquement exécutés)
+
+Facultatif :
 * Génération des rapports d'analyse : _mvn clean site_
 * Consultation des rapports d'analyse : afficher _TogoJUG\target\site\index.html_
+Attention : la génération des rapports demande le téléchargement de beaucoup de plugins. Il faut donc avoir une connexion Internet assez efficace pour que ça ne prenne pas trop de temps.
 
 Questions, support, félicitations, insultes
 -----------
